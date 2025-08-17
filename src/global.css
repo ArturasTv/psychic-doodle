@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-tablet: 40rem;
+  --breakpoint-desktop: 80rem;
+}
+
+/* Safelist grid utilities only for tablet & desktop */
+@source inline("{,tablet:,desktop:}grid-cols-{1..12}");
+@source inline("{,tablet:,desktop:}grid-rows-{1..12}");
+@source inline("{,tablet:,desktop:}col-span-{1..12}");
+@source inline("{,tablet:,desktop:}row-span-{1..12}");
+@source inline("{,tablet:,desktop:}col-start-{1..13}");
+@source inline("{,tablet:,desktop:}col-end-{1..13}");
+@source inline("{,tablet:,desktop:}row-start-{1..13}");
+@source inline("{,tablet:,desktop:}row-end-{1..13}");
+@source inline("{,tablet:,desktop:}gap-{0,0.5,1,1.5,2,2.5,3,3.5,4,5,6,7,8,9,10,11,12}");
+@source inline("{,tablet:,desktop:}gap-x-{0,0.5,1,1.5,2,2.5,3,3.5,4,5,6,7,8,9,10,11,12}");
+@source inline("{,tablet:,desktop:}gap-y-{0,0.5,1,1.5,2,2.5,3,3.5,4,5,6,7,8,9,10,11,12}");
+@source inline("{,tablet:,desktop:}place-items-{start,end,center,stretch}");
+@source inline("{,tablet:,desktop:}place-content-{start,end,center,stretch}");
+@source inline("{,tablet:,desktop:}place-self-{start,end,center,stretch}");
+@source inline("{,tablet:,desktop:}justify-items-{start,end,center,stretch}");
+@source inline("{,tablet:,desktop:}justify-self-{start,end,center,stretch}");
+@source inline("{,tablet:,desktop:}content-{start,end,center,stretch}");
+@source inline("{,tablet:,desktop:}items-{start,end,center,stretch}");
+@source inline("{,tablet:,desktop:}justify-{start,end,center,stretch}");
+@source inline("{,tablet:,desktop:}self-{start,end,center,stretch}");
+@source inline("{,tablet:,desktop:}auto-rows-{auto,min,max,fr}");
+@source inline("{,tablet:,desktop:}auto-cols-{auto,min,max,fr}");
+@source inline("{,tablet:,desktop:}grid-flow-{row,col,dense,row-dense,col-dense}");
+@source inline("{,tablet:,desktop:}order-{0..12}");
